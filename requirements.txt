@@ -1,17 +1,9 @@
-# It is recommended to use Conda and assets/environment.yml(or environment_LINUX) instead of requirements.txt.
+# It is recommended to install PyTorch manually.
+# PyTorch >= 2.4 is recommended.
+# See instructions at https://pytorch.org/get-started/locally/
 
-customtkinter
-ctkmessagebox
-ctklistbox
-ctktooltip
-ez-localizr
-tk
-tqdm
-pyyaml
-requests
-pillow
 click
-einops==0.6.1
+einops>=0.7.0
 h5py
 librosa<0.10.0
 lightning~=2.3.0
@@ -20,14 +12,12 @@ MonkeyType>=23.3.0
 numpy<2.0.0
 onnx>=1.21.0
 onnxsim>=0.6.5
-plyer
 praat-parselmouth==0.4.3
 pyworld==0.3.4
+PyYAML
 resampy
-setuptools<=80.10.2
 scipy>=1.10.0
 tensorboard
 tensorboardX
 torchmetrics
-
-#PyTorch >=2.4 <=2.8 also required. auto_torch.py will detect the recommended version for your system and install it to the environment it is run from.
+tqdm
