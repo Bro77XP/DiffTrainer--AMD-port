@@ -1,0 +1,202 @@
+base_config:
+- configs/base.yaml
+task_cls: training.acoustic_task.AcousticTask
+dictionaries:
+  en: dictionaries/en-phonemes.txt
+  ja: dictionaries/ja-phonemes.txt
+  zh: dictionaries/zh-phonemes.txt
+extra_phonemes:
+- AP
+- SP
+merged_phoneme_groups:
+- - en/b
+  - ja/b
+  - zh/b
+- - en/ch
+  - ja/ch
+  - zh/q
+- - en/d
+  - ja/d
+  - zh/d
+- - en/g
+  - ja/g
+  - zh/g
+- - en/k
+  - ja/k
+  - zh/k
+- - en/m
+  - ja/m
+  - zh/m
+- - en/n
+  - ja/n
+  - zh/n
+- - en/p
+  - ja/p
+  - zh/p
+- - en/s
+  - ja/s
+  - zh/s
+- - en/sh
+  - ja/sh
+  - zh/x
+- - en/t
+  - ja/t
+  - zh/t
+- - en/w
+  - ja/w
+  - zh/w
+- - en/y
+  - ja/y
+  - zh/y
+- - en/z
+  - ja/z
+  - zh/z
+datasets:
+- raw_data_dir: ../raw_data/raw data_segmented/normalold
+  speaker: normalold
+  spk_id: 0
+  language: en
+  test_prefixes:
+  - regularold_seg12
+  - regularold_seg25
+  - regularold_seg41
+- raw_data_dir: ../raw_data/raw data_segmented/softold
+  speaker: softold
+  spk_id: 1
+  language: en
+  test_prefixes:
+  - soft_seg39
+  - soft_seg14
+  - soft_seg34
+vocoder: NsfHifiGAN
+vocoder_ckpt: checkpoints/pc_nsf_hifigan_44.1k_hop512_128bin_2025.02/model.ckpt
+audio_sample_rate: 44100
+audio_num_mel_bins: 128
+hop_size: 512
+fft_size: 2048
+win_size: 2048
+fmin: 40
+fmax: 16000
+binarization_args:
+  shuffle: true
+  num_workers: 0
+augmentation_args:
+  random_pitch_shifting:
+    enabled: true
+    range:
+    - -3.0
+    - 3.0
+    scale: 0.25
+  fixed_pitch_shifting:
+    enabled: false
+    targets:
+    - -5.0
+    - 5.0
+    scale: 0.5
+  random_time_stretching:
+    enabled: true
+    range:
+    - 0.5
+    - 2.0
+    scale: 0.75
+binary_data_dir: checkpoints/binary
+binarizer_cls: preprocessing.acoustic_binarizer.AcousticBinarizer
+spec_min:
+- -12
+spec_max:
+- 0
+mel_vmin: -14.0
+mel_vmax: 4.0
+mel_base: e
+energy_smooth_width: 0.06
+breathiness_smooth_width: 0.06
+voicing_smooth_width: 0.06
+tension_smooth_width: 0.06
+use_lang_id: true
+num_lang: 3
+use_spk_id: true
+num_spk: 2
+use_mix_ln: true
+mix_ln_layer:
+- 0
+- 2
+use_energy_embed: true
+use_breathiness_embed: true
+use_voicing_embed: false
+use_tension_embed: false
+use_key_shift_embed: true
+use_speed_embed: true
+diffusion_type: reflow
+time_scale_factor: 1000
+timesteps: 1000
+max_beta: 0.02
+enc_ffn_kernel_size: 3
+use_rope: true
+rope_interleaved: false
+use_stretch_embed: false
+use_variance_scaling: true
+rel_pos: true
+sampling_algorithm: euler
+sampling_steps: 20
+diff_accelerator: unipc
+diff_speedup: 10
+hidden_size: 384
+backbone_type: lynxnet2
+backbone_args:
+  num_channels: 1024
+  num_layers: 6
+  kernel_size: 31
+  dropout_rate: 0.0
+  use_conditioner_cache: true
+  glu_type: atanglu
+main_loss_type: l1
+main_loss_log_norm: false
+schedule_type: linear
+use_shallow_diffusion: true
+T_start: 0.4
+T_start_infer: 0.4
+K_step: 400
+K_step_infer: 400
+shallow_diffusion_args:
+  train_aux_decoder: true
+  train_diffusion: true
+  val_gt_start: false
+  aux_decoder_arch: convnext
+  aux_decoder_args:
+    num_channels: 512
+    num_layers: 6
+    kernel_size: 7
+    dropout_rate: 0.1
+  aux_decoder_grad: 0.1
+lambda_aux_mel_loss: 0.2
+num_sanity_val_steps: 1
+optimizer_args:
+  optimizer_cls: modules.optimizer.muon.Muon_AdamW
+  lr: 0.0006
+  muon_args:
+    weight_decay: 0.1
+  adamw_args:
+    weight_decay: 0.0
+lr_scheduler_args:
+  step_size: 5000
+  gamma: 0.8
+max_batch_frames: 50000
+max_batch_size: 9
+dataset_size_key: lengths
+val_with_vocoder: true
+val_check_interval: 2000
+num_valid_plots: 10
+max_updates: 300000
+num_ckpt_keep: 8
+permanent_ckpt_start: 60000
+permanent_ckpt_interval: 10000
+finetune_enabled: false
+finetune_ckpt_path: null
+finetune_ignored_params:
+- model.fs2.encoder.embed_tokens
+- model.fs2.txt_embed
+- model.fs2.spk_embed
+finetune_strict_shapes: true
+freezing_enabled: false
+frozen_params: []
+hnsep: vr
