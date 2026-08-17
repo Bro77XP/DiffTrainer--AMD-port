@@ -1,0 +1,17 @@
+merged_phoneme_groups:
+  - [en/b, ja/b, zh/b]
+  - [en/ch, ja/ch, zh/q]
+  - [en/d, ja/d, zh/d]
+  - [en/g, ja/g, zh/g]
+  - [en/k, ja/k, zh/k]
+  - [en/m, ja/m, zh/m]
+  - [en/n, ja/n, zh/n]
+  - [en/p, ja/p, zh/p]
+  - [en/s, ja/s, zh/s]
+  - [en/sh, ja/sh, zh/x]
+  - [en/t, ja/t, zh/t]
+  - [en/w, ja/w, zh/w]
+  - [en/y, ja/y, zh/y]
+  - [en/z, ja/z, zh/z]
+#these are not great merges
+#they will not ruin your model but they are mostly a formatting reference

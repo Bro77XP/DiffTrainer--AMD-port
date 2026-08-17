@@ -1,0 +1,8 @@
+dictionaries:
+  en: dictionaries/en-phonemes.txt
+  ja: dictionaries/ja-phonemes.txt
+  zh: dictionaries/zh-phonemes.txt
+extra_phonemes: [AP, SP]
+merge_list: merged.yaml
+
+#all formatting is entirely subject to change
