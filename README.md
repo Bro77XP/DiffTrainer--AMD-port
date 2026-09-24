@@ -127,7 +127,7 @@ ___UNACTIVE SUPPORT: 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗪𝗘 𝗖𝗔𝗡'𝗧 �
 
 serious message: Stop harrassing github Developers for diffsingers and people who make free stuff and tools for diffsingers for You if You want something made for the community. Especially if they are in middle of having a idea that might help out in the future. 
 
-i'm keeping this github up For the sake Of Any users that Absolutely need the Amd port Which You Are Completely allowed to edit and improve to fix the minor bugs that are left and not for people Who are trying to start drama especially with devs that have fully gone on hiatus or are not active on the server Anymore/left and still get stuff dug on them despite doing nothing wrong across 𝙢𝙪𝙡𝙩𝙞𝙥𝙡𝙚 𝙎𝙚𝙧𝙫𝙚𝙧𝙨 WHICH IS NOT OKAY. 
+i'm keeping this github up For the sake Of Any users that Absolutely need the Amd port Which You Are Completely allowed to edit and or fork this repo and improve and fix the minor bugs that are left that i might've not spotted and not for people Who are trying to start drama especially with devs that have fully gone on hiatus or are not active on the server Anymore/left and still get stuff dug on them despite doing nothing wrong across 𝙢𝙪𝙡𝙩𝙞𝙥𝙡𝙚 𝙎𝙚𝙧𝙫𝙚𝙧𝙨 WHICH IS NOT OKAY. 
 
 i don't plan on making new version past this public since I've gotten a Stupid amount of claims/harrassment which isn't just a thing closed off just to me as a dev and to the community.
 
