@@ -115,6 +115,19 @@ All AMD .bat files call the project's `venv` directly — no Conda is needed or 
 - `view_phonemes.bat`: list and open the language phoneme dictionaries (`DiffSinger\dictionaries\*-phonemes.txt`) in Notepad for viewing/editing
     - pick a number to open one language, `A` to open all, `Q` to quit
 - `DiffSinger\train_variance.bat`: variance training from a batch file (activates the `venv`, runs `scripts/train.py` with `configs\variance.yaml` into `checkpoints\variance`)
+
+
     - NOTE: train into a SEPARATE work dir from the acoustic model. The variance model has a different architecture and CANNOT resume an acoustic checkpoint (`model_ckpt_steps_*.ckpt`). `--reset` only resets hparams, NOT checkpoints, so a fresh exp_name is required.
 - `DiffSinger\gen_notes.bat`: auto-generates `note_seq`/`note_dur` from the audio f0 contour (one note per phone)
     - this is a pitch-following approximation, NOT real musical score annotation. Variance training will run, but you will NOT get true note-level pitch control at inference — for that you still need real MIDI/score notes in `transcriptions.csv`.
+
+
+    
+___UNACTIVE SUPPORT: B̶E̶C̶A̶U̶S̶E̶ ̶W̶E̶ ̶C̶A̶N̶'̶T̶ ̶H̶A̶V̶E̶ ̶N̶I̶C̶E̶ ̶T̶H̶I̶N̶G̶S̶
+serious message: Stop harrassing github Developers for diffsingers and people who make free stuff and tools for diffsingers for You if You want something made for the community. Especially if they are in middle of having a idea that might help out in the future. 
+
+i'm keeping this github up For the sake Of Any users that Absolutely need the Amd port Which You Are Completely allowed to edit and improve to fix the minor bugs that are left and not for people Who are trying to start drama especially with devs that have fully gone on hiatus or are not active on the server Anymore/left and still get stuff dug on them despite doing nothing wrong across 𝙢𝙪𝙡𝙩𝙞𝙥𝙡𝙚 𝙎𝙚𝙧𝙫𝙚𝙧𝙨 WHICH IS NOT OKAY. 
+
+i don't plan on making new version past this public since I've gotten a Stupid amount of claims/harrassment which isn't just a thing closed off just to me as a dev and to the community.
+
+Do not harrass and shit on people or users who use this it is a just a amd Port of diffsinger For people to use for free.
