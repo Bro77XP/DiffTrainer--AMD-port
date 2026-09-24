@@ -124,6 +124,7 @@ All AMD .bat files call the project's `venv` directly — no Conda is needed or 
 
     
 ___UNACTIVE SUPPORT: B̶E̶C̶A̶U̶S̶E̶ ̶W̶E̶ ̶C̶A̶N̶'̶T̶ ̶H̶A̶V̶E̶ ̶N̶I̶C̶E̶ ̶T̶H̶I̶N̶G̶S̶
+
 serious message: Stop harrassing github Developers for diffsingers and people who make free stuff and tools for diffsingers for You if You want something made for the community. Especially if they are in middle of having a idea that might help out in the future. 
 
 i'm keeping this github up For the sake Of Any users that Absolutely need the Amd port Which You Are Completely allowed to edit and improve to fix the minor bugs that are left and not for people Who are trying to start drama especially with devs that have fully gone on hiatus or are not active on the server Anymore/left and still get stuff dug on them despite doing nothing wrong across 𝙢𝙪𝙡𝙩𝙞𝙥𝙡𝙚 𝙎𝙚𝙧𝙫𝙚𝙧𝙨 WHICH IS NOT OKAY. 
