@@ -123,7 +123,7 @@ All AMD .bat files call the project's `venv` directly — no Conda is needed or 
 
 
     
-___UNACTIVE SUPPORT: B̶E̶C̶A̶U̶S̶E̶ ̶W̶E̶ ̶C̶A̶N̶'̶T̶ ̶H̶A̶V̶E̶ ̶N̶I̶C̶E̶ ̶T̶H̶I̶N̶G̶S̶
+___UNACTIVE SUPPORT: B̲E̲C̲A̲U̲S̲E̲ ̲W̲E̲ ̲C̲A̲N̲'̲T̲ ̲H̲A̲V̲E̲ ̲N̲I̲C̲E̲ ̲T̲H̲I̲N̲G̲S̲
 
 serious message: Stop harrassing github Developers for diffsingers and people who make free stuff and tools for diffsingers for You if You want something made for the community. Especially if they are in middle of having a idea that might help out in the future. 
 
