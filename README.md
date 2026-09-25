@@ -129,6 +129,6 @@ serious message: Stop harrassing github Developers for diffsingers and people wh
 
 i'm keeping this github up For the sake Of Any users that Absolutely need the Amd port Which You Are Completely allowed to edit and or fork this repo and improve and fix the minor bugs that are left that i might've not spotted and not for people Who are trying to start drama especially with devs that are not active on the server Anymore/left and still get stuff dug on them despite doing nothing wrong across 𝙢𝙪𝙡𝙩𝙞𝙥𝙡𝙚 𝙎𝙚𝙧𝙫𝙚𝙧𝙨 WHICH IS NOT OKAY. 
 
-i don't plan on making new version past this public since I've gotten a Stupid amount of claims/harrassment which isn't just a thing closed off just to me as a dev and to the community.
+i don't plan on making new version past this public since I've gotten a Stupid amount of harrassment which isn't just a thing closed off just to me as a dev and to the community.
 
 Do not harrass and shit on people or users who use this it is a just a amd Port of diffsinger For people to use for free.
