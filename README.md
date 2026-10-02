@@ -131,6 +131,6 @@ i'm keeping this github up For the sake Of Any users that Absolutely need the Am
 
 i don't plan on making new version past this public since I've gotten a Stupid amount of harrassment with any project i have worked on related on diffsinger which isn't just a thing closed off just to me as a dev and to the community. Which is My way to say Don't harrass people if you don't want support to end on a public project that has given support to amd gpus for difftrainer that previously didn't have it for users.
 
-and although I've thought About deleting this project so I won't deal with anymore harassment (which is unfortunate) it would not be fair to the people using this on a day to day basis and for future diffsingers unless there is a transfer of ownership on this port or there is a fork that archies both versions.
+and although I've thought About deleting this project so I won't deal with anymore harassment (which is unfortunate) it would not be fair to the people using this on a day to day basis that use amd gpus and for future diffsingers that don't have access to nvdia gpus unless there is a transfer of ownership on this port or there is a fork that archies both versions.
 
 Do not harrass and shit on people or users who use this as this is a amd Port of difftrainer For people to use for free.
